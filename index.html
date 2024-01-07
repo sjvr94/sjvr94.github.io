@@ -12,24 +12,55 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->        
-    <main>
-        <div>
-            <h1 id="get_focused_h1" style="color:darkorange;font-style: italic;">
-                Get focused on your productivity
-            </h1>
-            <h1 id="with_h1" style="color: red;text-align: center;font-style: italic;">with</h1>
-            <div id="pt_logo">
-                <img src="img/productivity_tracker_logo.png" alt="productivity_tracker_logo">
+        <![endif]-->  
+     
+    <div class="wrapper">
+        <nav>
+            <img src="img/vitan_logo_white_nav.png" alt="Vitan Logo in white">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav> 
+        <div class="box box1">
+            <div class="banner_box1">
+                <h1>
+                    Get yourself focused on your productivity <br> with </br>
+                </h1>
+                <h1 style="color: dodgerblue;font-family: Inter, Arial, sans-serif;">
+                    productivity tracker
+                </h1>
             </div>
-    </main>
+        </div>
+        <div class="box box2">
+            <div class="app_desc">
+                "Productivity Tracker" is a streamlined app designed to elevate your efficiency effortlessly. With its user-friendly interface, this minimalist tool records your productivity sessions by capturing start and stop times, providing insightful duration metrics. The app's simplicity ensures a seamless experience, allowing you to effortlessly manage and optimize your work patterns. Dive into detailed daily productivity records presented in a convenient tabular format, enabling you to track your accomplishments with ease. Stay focused, stay organized, and unlock your full potential with the Productivity Tracker app – your key to enhanced efficiency and mindful time management.
+
+                <div class="btn_container">
+                    <button class="btn primary large green">Download app</button>
+                    <a href="privacy.html">
+                        <button class="btn primary large">Privacy policy</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box box3">
+            <div class="footer">
+                &copy; 
+                <script> 
+                    const currentYear = new Date().getFullYear();
+                    document.write(currentYear)
+                </script>
+                Vitan. All rights reserved.
+            </div>
+        </div>
+    </div>
     
-    <script>
+    <!-- <script>
         // Use JavaScript to include the navbar content dynamically
         document.addEventListener("DOMContentLoaded", function () {
           var navbarContainer = document.createElement('div');
@@ -43,7 +74,7 @@
               navbarContainer.innerHTML = data;
             });
         });
-      </script>
+      </script> -->
 </body>
 
 </html>

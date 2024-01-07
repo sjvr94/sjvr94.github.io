@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Inter;
+  src: url(inter_regular.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,18 +16,123 @@ body {
     text-align: center;
   }
 
+  .wrapper {
+    max-width: 100%;
+    /* height: 100px; */
+    
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+  }
+
+.box {
+  background-color: white;
+  padding: 30px;
+}
+
+  .box1 {
+    animation: colorTransitionLightcyan 1s forwards;
+  }
+
+.box2 {
+  animation: colorTransitionWhitesmoke 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.box3 {
+  animation: colorTransitionLightgray 1s forwards;
+  animation-delay: 1s;
+}
+
+  .banner_box1 {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+  }
+
+  .app_desc {
+    margin: 0 auto;
+    opacity: 0;
+    max-width: 600px;
+    text-align: justify;
+    font-size: 22px;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  .btn_container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+  }
+
+  .footer {
+    text-align: center;
+    max-width: 600px;
+    opacity: 0;
+    color: rgb(70, 70, 70);
+    font-size: 16px;
+    margin: 0 auto;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }
+
+  #privacy-container {
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 18px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    max-width: 600px;
+    animation: fadeIn 1s forwards;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.primary {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.secondary {
+  background-color: lightgray;
+  color: black;
+}
+
+.large {
+  font-size: 22px;
+  padding: 15px 25px;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
   nav {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     background-color: #424242;
-    padding: 10px;
+    padding: 10px 30px;
   }
 
   nav img {
-    height: 25px; /* Adjust the height of your logo */
+    height: 20px; /* Adjust the height of your logo */
     width: auto;
   }
 
@@ -85,5 +195,38 @@ body {
     to {
       opacity: 1;
       transform: translateX(0); /* Final position */
+    }
+  }
+
+  @keyframes colorTransitionWhitesmoke {
+    from {
+      opacity: 0;
+      background-color: white;
+    }
+    to {
+      opacity: 1;
+      background-color: whitesmoke;
+    }
+  }
+
+  @keyframes colorTransitionLightcyan {
+    from {
+      opacity: 0;
+      background-color: white;
+    }
+    to {
+      opacity: 1;
+      background-color: lightcyan;
+    }
+  }
+
+  @keyframes colorTransitionLightgray {
+    from {
+      opacity: 0;
+      background-color: white;
+    }
+    to {
+      opacity: 1;
+      background-color: lightgray;
     }
   }
