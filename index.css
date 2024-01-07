@@ -4,36 +4,36 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-  header {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
-  }
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
 
-  .wrapper {
-    max-width: 100%;
-    /* height: 100px; */
-    
-    /* margin: 0 auto; */
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid blue; */
-  }
+.wrapper {
+  max-width: 100%;
+  /* height: 100px; */
+
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+}
 
 .box {
   background-color: white;
   padding: 30px;
 }
 
-  .box1 {
-    animation: colorTransitionLightcyan 1s forwards;
-  }
+.box1 {
+  animation: colorTransitionLightcyan 1s forwards;
+}
 
 .box2 {
   animation: colorTransitionWhitesmoke 1s forwards;
@@ -45,50 +45,50 @@ body {
   animation-delay: 1s;
 }
 
-  .banner_box1 {
-    margin: 0 auto;
-    max-width: 600px;
-    text-align: center;
-    animation: fadeIn 1s forwards;
-  }
+.banner_box1 {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+}
 
-  .app_desc {
-    margin: 0 auto;
-    opacity: 0;
-    max-width: 600px;
-    text-align: justify;
-    font-size: 22px;
-    animation: fadeIn 1s forwards;
-    animation-delay: 0.5s;
-  }
+.app_desc {
+  margin: 0 auto;
+  opacity: 0;
+  max-width: 600px;
+  text-align: justify;
+  font-size: 1.3rem;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
+}
 
-  .btn_container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.btn_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 
-  }
+}
 
-  .footer {
-    text-align: center;
-    max-width: 600px;
-    opacity: 0;
-    color: rgb(70, 70, 70);
-    font-size: 16px;
-    margin: 0 auto;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
-  }
+.footer {
+  text-align: center;
+  max-width: 600px;
+  opacity: 0;
+  color: rgb(70, 70, 70);
+  font-size: 16px;
+  margin: 0 auto;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
 
-  #privacy-container {
-    margin: 0 auto;
-    border-radius: 8px;
-    padding: 20px;
-    font-size: 18px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    max-width: 600px;
-    animation: fadeIn 1s forwards;
+#privacy-container {
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 18px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  max-width: 600px;
+  animation: fadeIn 1s forwards;
 }
 
 .btn {
@@ -121,112 +121,132 @@ body {
   opacity: 0.5;
 }
 
-  nav {
-    max-width: 100%;
+nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #424242;
+  padding: 10px 0;
+}
+
+nav img {
+  height: 20px;
+  /* Adjust the height of your logo */
+  width: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+main {
+  padding: 20px;
+  text-align: right;
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+
+}
+
+.navbar_iframe {
+  width: 100%;
+}
+
+#get_focused_h1 {
+  text-align: center;
+  opacity: 0;
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+#with_h1 {
+  text-align: center;
+  opacity: 0;
+  animation: fadeInRight 0.5s forwards;
+  animation-delay: 1s;
+}
+
+#pt_logo {
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
+}
+
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(500px);
+    /* Start position outside the viewport on the right */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    /* Final position */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+    /* Initial position outside the viewport */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    /* Final position */
+  }
+}
+
+@keyframes colorTransitionWhitesmoke {
+  from {
+    opacity: 0;
+    background-color: white;
+  }
+
+  to {
+    opacity: 1;
+    background-color: whitesmoke;
+  }
+}
+
+@keyframes colorTransitionLightcyan {
+  from {
+    opacity: 0;
+    background-color: white;
+  }
+
+  to {
+    opacity: 1;
+    background-color: lightcyan;
+  }
+}
+
+@keyframes colorTransitionLightgray {
+  from {
+    opacity: 0;
+    background-color: white;
+  }
+
+  to {
+    opacity: 1;
+    background-color: lightgray;
+  }
+}
+
+/* Styles for screens with a maximum width of 600 pixels */
+@media (max-width: 450px) {
+  .btn_container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
-    background-color: #424242;
-    padding: 10px 30px;
   }
-
-  nav img {
-    height: 20px; /* Adjust the height of your logo */
-    width: auto;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-  }
-
-  main {
-    padding: 20px;
-    text-align: right;
-    white-space: nowrap; /* Prevent text from wrapping */
-
-  }
-
-  .navbar_iframe {
-    width: 100%;
-  }
-
-  #get_focused_h1 {
-    text-align: center;
-    opacity: 0; 
-    animation: fadeInRight 0.5s forwards;
-    animation-delay: 0.5s; 
-  }
-
-  #with_h1 {
-    text-align: center;
-    opacity: 0; 
-    animation: fadeInRight 0.5s forwards;
-    animation-delay: 1s; 
-  }
-
-  #pt_logo {
-    text-align: center;
-    opacity: 0; 
-    animation: fadeIn 1s forwards;
-    animation-delay: 1.5s; 
-  }
-
-
-
-  @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(500px); /* Start position outside the viewport on the right */
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0); /* Final position */
-    }
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-20px); /* Initial position outside the viewport */
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0); /* Final position */
-    }
-  }
-
-  @keyframes colorTransitionWhitesmoke {
-    from {
-      opacity: 0;
-      background-color: white;
-    }
-    to {
-      opacity: 1;
-      background-color: whitesmoke;
-    }
-  }
-
-  @keyframes colorTransitionLightcyan {
-    from {
-      opacity: 0;
-      background-color: white;
-    }
-    to {
-      opacity: 1;
-      background-color: lightcyan;
-    }
-  }
-
-  @keyframes colorTransitionLightgray {
-    from {
-      opacity: 0;
-      background-color: white;
-    }
-    to {
-      opacity: 1;
-      background-color: lightgray;
-    }
-  }
+}
