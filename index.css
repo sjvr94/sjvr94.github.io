@@ -214,7 +214,7 @@ main {
 
   to {
     opacity: 1;
-    background-color: whitesmoke;
+    background-color: rgb(240, 240, 240);
   }
 }
 
@@ -233,12 +233,10 @@ main {
 @keyframes colorTransitionLightgray {
   from {
     opacity: 0;
-    background-color: white;
   }
 
   to {
     opacity: 1;
-    background-color: lightgray;
   }
 }
 
